@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Diwash</title>
+  <style>
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      width: 100%;
+      margin-top: 40px;
+      z-index: 998;
+
+    }
+
+    .mobile-nav.active {
+      display: block;
+    }
+
+    .mobile-nav .elements {
+      display: block;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+
+    .mobile-nav .elements ul {
+      display: block;
+    }
+
+    .mobile-nav .elements ul li {
+      margin-bottom: 10px;
+    }
+
+    .mobile-nav .elements ul li a {
+      color: #63a443;
+      font-size: 18px;
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .mobile-nav .elements ul li a:hover {
+      background-color: #29bfd0;
+    }
+
+    .mobile-menu {
+      display: none;
+      cursor: pointer;
+      margin-left: 90%;
+      
+    }
+    .header{
+      background-color: #29bfd0;
+    }
+    .mobile-menu i { 
+      font-size: 24px;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width:768px) {
+      .navbar .elements {
+        display: none;
+      }
+
+      
+      .mobile-menu {
+        display: block;
+        position: fixed;
+        margin-top: 40px;
+        z-index: 999;
+      }
+
+      .navbar .logo {
+        margin-left: 10px;
+        position: fixed;
+        margin-top: 40px;
+        z-index: 999;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h3>Diwash.com</h3>
+      </div>
+      <div class="elements">
+        <ul>
+          <li><a href="#home"><span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#journey"><span>Journey</span></a></li>
+          <li><a href="#skills"><span>Skills</span></a></li>
+          <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="back">
+    <div class="mobile-menu" onclick="toggleMobileNav()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="mobile-nav">
+      <div class="elements">
+        <ul>
+          <li><a href="#home"><span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#journey"><span>Journey</span></a></li>
+          <li><a href="#skills"><span>Skills</span></a></li>
+          <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="intro">
+      <div class="animate">
+        <div class="static-text">HI, I am </div>
+        <ul class="animate-text">
+          <li><span>Diwash</span></li>
+          <li><span>Student</span></li>
+          <li><span>Coder</span></li>
+          <li><span>Developer</span></li>
+        </ul>
+      </div>
+      <h5>
+        Welcome to my website! I'm passionate about coding and web development.
+        Let's build amazing projects together!.
+      </h5>
+      <div class="buttons">
+        <button type="button">Read more</button>
+        <button type="button">Contact me</button>
+      </div>
+    </div>
+    <div class="image1">
+      <img src="img1..png" alt="" />
+      <span class="circle"></span>
+    </div>
+  </section>
+  <hr />
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <div class="paragraph-container1">
+        <p>
+          I am a passionate student, coder, and developer with a strong interest in web development and
+          programming. My journey in the world of coding began a few years ago when I discovered my
+          fascination for turning ideas into reality through code.
+        </p>
+        <img src="coding-about-img-1.jpg" alt="Image After Paragraph 2" />
+      </div>
+      <div class="paragraph-container2">
+        <p>
+          Throughout my coding journey, I have worked on various projects that have helped me expand my skills
+          and deepen my understanding of programming concepts. I am continuously learning and striving to
+          improve my abilities to build robust and innovative solutions.
+        </p>
+        <img src="coding-about-img-2.jpg" alt="Image After Paragraph 3" />
+      </div>
+      <div class="paragraph-container3">
+        <p>
+          When I'm not coding, you can find me exploring new technologies, reading tech blogs, and spending time
+          with my friends and family.
+        </p>
+        <img src="coding-about-img-3.jpg" alt="Image After Paragraph 4" />
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <section class="journey" id="journey">
+    <h2>MY Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-icon">📅</span>
+        <div class="timeline-content">
+          <h3>2008 to 2012</h3>
+          <p>Great Motherland Academy</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-icon">📅</span>
+        <div class="timeline-content">
+          <h3>2013 to 2015</h3>
+          <p>Birgha English Boarding School</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-icon">📅</span>
+        <div class="timeline-content">
+          <h3>2016 to 2017</h3>
+          <p>Deep Boarding Secondary School</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-icon">📅</span>
+        <div class="timeline-content">
+          <h3>2018 to 2022</h3>
+          <p>Kalika Manavgyan Secondary School</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-icon">📅</span>
+        <div class="timeline-content">
+          <h3>2023 to Now</h3>
+          <p>Parul University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  <section class="skills" id="skills">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+      <div class="left-column">
+        <h2>Programming Skills</h2>
+        <div class="skill-item">
+          <span class="skill-name">HTML</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">CSS</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;">70%</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">JavaScript</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;">50%</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Others</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 69%;">69%</div>
+          </div>
+        </div>
+      </div>
+      <div class="right-column">
+        <h2>Software Skills</h2>
+        <div class="skill-item">
+          <span class="skill-name">C Program</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%;">60%</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">C++</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;">50%</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Web Development</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;">50%</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Web Design</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%;">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+
+      <p>
+        <span>How I learned? <br> <br></span>
+        I started learning HTML, CSS, and JavaScript during my school days. Over time, I honed my web development skills
+        by working on various projects and exploring different technologies. In college, I delved into C and C++
+        programming, which provided a solid foundation for my programming journey. Additionally, I gained hands-on
+        experience in web development and web design by building personal projects and participating in online courses.
+      </p>
+      <img src="skills-img.jpg" alt="Skill image">
+    </div>
+  </section>
+
+  <hr />
+
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+
+      <form action="#" method="post">
+        <div class="input_info">
+          <div class="form-group-left">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group-right">
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+        </div>
+        <div class="form-group-message">
+          <textarea id="message" name="message" rows="auto" cols="40" placeholder="Your Message" required></textarea>
+        </div>
+
+      </form>
+      <button type="submit">SUBMIT</button>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Copyright Symbol -->
+      <p>&copy; 2023 Diwash.com</p>
+
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://www.threads.net/@diw_ash1" target="_blank" rel="noopener noreferrer" title="Thread"><i
+            class="fab fa-face-grin-squint-tears"></i></a>
+        <a href="https://www.instagram.com/diw_ash1/" target="_blank" rel="noopener noreferrer" title="Instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/pandey.diwash.94/" target="_blank" rel="noopener noreferrer"
+          title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@diwash.suiii" target="_blank" rel="noopener noreferrer" title="TikTok"><i
+            class="fab fa-tiktok"></i></a>
+        <a href="https://twitter.com/DiwashPandey10" target="_blank" rel="noopener noreferrer" title="Twitter"><i
+            class="fab fa-twitter"></i></a>
+      </div>
+
+      <!-- Go to Home Button -->
+      <a href="#home" class="home-button"><i class="fas fa-home"></i></a>
+    </div>
+  </footer>
+</body>
+<script>
+  function toggleMobileNav() {
+    const mobileNav = document.querySelector(".mobile-nav");
+    mobileNav.classList.toggle("active");
+  }
+</script>
+
+</html>
