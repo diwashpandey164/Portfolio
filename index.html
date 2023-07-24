@@ -136,8 +136,8 @@
         Let's build amazing projects together!.
       </h5>
       <div class="buttons">
-        <button type="button"><a href="#about" >Read more</a></button>
-        <button type="button"><a href="#contact"> Contact me</a></button>
+        <button type="button">Read more</button>
+        <button type="button">Contact me</button>
       </div>
     </div>
     <div class="image1">
@@ -298,7 +298,7 @@
     <h2>Contact Me</h2>
     <div class="contact-container">
 
-      <form action="#" method="post">
+      <form action="submit_index.php" method="post">
         <div class="input_info">
           <div class="form-group-left">
             <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -312,9 +312,9 @@
         <div class="form-group-message">
           <textarea id="message" name="message" rows="auto" cols="40" placeholder="Your Message" required></textarea>
         </div>
-
+        <input class="button"  type="submit" value="SUBMIT">
       </form>
-      <button type="submit">SUBMIT</button>
+    
     </div>
   </section>
   <!-- Footer Section -->
@@ -342,6 +342,7 @@
     </div>
   </footer>
 </body>
+
 <script>
   function toggleMobileNav() {
     const mobileNav = document.querySelector(".mobile-nav");
