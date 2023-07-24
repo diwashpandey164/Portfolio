@@ -681,7 +681,7 @@ textarea {
  resize: vertical;
 }
 
-button {
+.button {
   box-shadow: 1px 0px 5px aqua;
   color: #000000;
   padding: 12px 20px;
@@ -694,7 +694,7 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
   background-color: aqua;
   color:white;
 }
